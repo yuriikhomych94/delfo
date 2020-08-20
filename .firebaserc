@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "delfo-f44e4": {
+      "hosting": {
+        "delfo": [
+          "delfo-f44e4"
+        ]
+      }
+    }
+  }
+}

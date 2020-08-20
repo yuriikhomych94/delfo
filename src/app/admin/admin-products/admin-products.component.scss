@@ -1,0 +1,16 @@
+.btn__add {
+    width: 150px;
+    height: 35px;
+    border-radius: 5px;
+    margin-top: 20px;
+    border: 1px solid transparent;
+    color: white;
+    background-color: rgb(28, 197, 28);
+    transition: .3s;
+}
+
+.btn__add:hover {
+    border: 1px solid rgb(28, 197, 28);
+    color: rgb(28, 197, 28);
+    background-color: transparent;
+}

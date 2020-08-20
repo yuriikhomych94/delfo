@@ -1,0 +1,72 @@
+<header>
+
+  <div class="user-block">
+    <a class="admin" [routerLink]="[ '/admin' ]">Увійти</a>
+  </div>
+
+  <div class="cart">
+    <a [routerLink]="[ '/basket' ]" class="basket">
+      <img src="https://www.lapiec-pizza.com.ua/wp-content/themes/lapiec/fonts/svg-icons/shopping-cart.svg"
+        alt="shopping-cart">
+      <span class="basketPrice">
+        <i>{{sum}} грн</i>
+      </span>
+    </a>
+  </div>
+
+</header>
+
+
+<div class="menu">
+  <ul class="main-menu">
+
+    <li class="home">
+      <a [routerLink]="[ '/home']">
+        <span>Home</span>
+      </a>
+      <div class="cyrcle-o"></div>
+    </li>
+
+    <li class="pizza">
+      <a [routerLink]="[ 'menu/salad']">
+        <span>Salad</span>
+      </a>
+      <div class="cyrcle-o"></div>
+    </li>
+
+    <li class="pizza">
+      <a [routerLink]="[ 'menu/pizza']">
+        <span>Pizza</span>
+      </a>
+      <div class="cyrcle-o"></div>
+    </li>
+
+    <li class="pasta">
+      <a [routerLink]="[ 'menu/pasta']">
+        <span>Pasta</span>
+      </a>
+      <div class="cyrcle-o"></div>
+    </li>
+
+    <li class="pavioli">
+      <a [routerLink]="[ 'menu/ravioli']">
+        <span>Ravioli</span>
+      </a>
+      <div class="cyrcle-o"></div>
+    </li>
+
+    <li class="dessert">
+      <a [routerLink]="[ 'menu/dessert']">
+        <span>Dessert</span>
+      </a>
+      <div class="cyrcle-o"></div>
+    </li>
+
+    <li class="sales">
+      <a [routerLink]="[ '/sales']">
+        <span>Sales</span>
+      </a>
+      <div class="cyrcle-o"></div>
+    </li>
+  </ul>
+</div>

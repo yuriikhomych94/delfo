@@ -1,0 +1,38 @@
+app/ 
+    components/
+        header
+        footer
+    
+    pages/
+        home/
+        sales/
+        pizza/
+        paste
+        salad
+        ravioli
+        dessert
+        sauces
+        basket
+        payment
+        product-details
+        sales-details
+
+    shared/
+        interfaces
+        model
+        directive
+        services
+
+    admin/
+        admin-category
+        admin-product
+        admin-sales
+        admin-orders
+        
+
+
+Спілкування між компонентами 
+    Input - вхідні дані, працює від батьківсьокго компоненту до дочірнього 
+    Output - працює від дочірнього до батьківського
+    ViewChild - від батьківсього до дочірнього  
+    Services - робота з різними компонентами (місце де зберігається логіка, глобальні дані для різних компонентів)

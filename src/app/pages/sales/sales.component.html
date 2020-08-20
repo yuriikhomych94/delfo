@@ -1,0 +1,11 @@
+<div class="container-fluid">
+    <div class="row">
+        <div *ngFor="let sale of sales; let i=index" class="card col-3">
+            <img class="card-img-top" src="{{sale.image}}" alt="" [routerLink]="[ '/sale', sale.id ]">
+            <div class="card-body">
+                <h5 class="card-title">{{sale.name}}</h5>
+                <p class="card-text">{{sale.description}}</p>
+            </div>
+        </div>
+    </div>
+</div>

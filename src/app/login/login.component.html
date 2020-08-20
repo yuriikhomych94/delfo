@@ -1,0 +1,52 @@
+<div class="login__image">
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <!-- Форма реєстріції -->
+                <form *ngIf="isSignUpActive" (ngSubmit)="signUp(signUpForm.value)" [formGroup]="signUpForm">
+
+                    <div class="group">
+                        <input formControlName="email" id="signUpEmail" type="email" required name="email" required>
+                        <span class="bar"></span>
+                        <label for="signUpEmail">Email</label>
+                        <div *ngIf="signUpForm.controls['email'].invalid && signUpForm.controls['email'].touched"
+                            class="alert alert-danger">Введіть коректно вашу електронну адресу</div>
+                    </div>
+
+                    <div class="group">
+                        <input formControlName="password" id="signUpPassword" type="password" name="password" required>
+                        <span class="bar"></span>
+                        <label for="signUpPassword">Password</label>
+                    </div>
+                    <button type="submit" id="btn__sign__up" [disabled]="!signUpForm.valid">Зареєструватись</button>
+
+                    <button type="button" id="btn__sign__in" (click)="check()">Увійти</button>
+                </form>
+
+                <!-- Форма логінування -->
+                <form *ngIf="!isSignUpActive" (ngSubmit)="login(loginForm.value)" [formGroup]="loginForm">
+
+                    <div class="group">
+                        <input formControlName="email" id="signUpEmail" type="email" required name="email" required>
+                        <span class="bar"></span>
+                        <label for="loginEmail">Email Address</label>
+                        <div *ngIf="loginForm.controls['email'].invalid && loginForm.controls['email'].touched"
+                            class="alert alert-danger">Введіть коректно вашу електронну адресу</div>
+                    </div>
+
+                    <div class="group">
+                        <input formControlName="password" id="loginPassword" type="password" name="password" required>
+                        <span class="bar"></span>
+                        <label for="signUpPassword">Password</label>
+                    </div>
+
+                    <button type="submit" id="btn__sign__up" [disabled]="!loginForm.valid">Увійти</button>
+
+                    <button type="button" id="btn__sign__in" (click)="check()">Зареєструватись</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>

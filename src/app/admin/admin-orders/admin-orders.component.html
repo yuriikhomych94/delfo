@@ -1,0 +1,28 @@
+<div class="order-content">
+    <div class="order-top">
+        <div class="order-header">Замовлення:</div>
+    </div>
+    <div class="cart-order" *ngFor="let order of orders; let i=index">
+        <div class="order">
+            <div class="id">
+                <div class="order-id"> {{i + 1}} </div>
+            </div>
+            <div class="order-image">
+                <div class="image" [style.backgroundImage]="'url('+ order.image +')'"></div>
+            </div>
+            <div class="order-productname"> {{ order.orders }} </div>
+
+            <div class="order-username"> {{order.userName}} </div>
+            <div class="order-userphone"> {{ order.userPhone }} </div>
+            <div class="order-usercity"> {{ order.userCity }} </div>
+            <div class="order-userstreet"> {{ order.userStreet }} </div>
+            <div class="order-userhouse"> {{ order.userHouse }} </div>
+            <div class="order-usercomment"> {{ order.totalPayment }} </div>
+
+            <div class="order-usercomment">
+                <textarea class="usercomment"> {{ order.userComment }} </textarea>
+            </div>
+
+        </div>
+    </div>
+</div>

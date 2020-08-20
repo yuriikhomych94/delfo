@@ -1,0 +1,43 @@
+<form>
+    <div class="form-group">
+        <label for="nameUA">Name UA</label>
+        <input [(ngModel)]="nameUA" name="nameUA" type="text" class="form-control" id="nameUA">
+    </div>
+
+    <div class="form-group">
+        <label for="nameEN">Name EN</label>
+        <input [(ngModel)]="nameEN" name="nameEN" type="text" class="form-control" id="nameEN">
+    </div>
+
+    <button (click)="addCategory()" class="btn__add">Додати</button>
+
+</form>
+
+<hr>
+
+<table class="table">
+
+    <thead>
+        <th>#</th>
+        <th>Name UA</th>
+        <th>Name EN</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let adminCategory of adminCategories; let i=index">
+            <td> {{ i + 1 }} </td>
+            <td> {{ adminCategory.nameUA }} </td>
+            <td> {{ adminCategory.nameEN }} </td>
+            <td>
+                <button (click)="editCategory(adminCategory)" class="btn__edit">Редагувати</button>
+            </td>
+            <td>
+                <button (click)="deleteCategory(adminCategory)" class="btn__delete">Видалити</button>
+            </td>
+        </tr>
+    </tbody>
+
+
+</table>

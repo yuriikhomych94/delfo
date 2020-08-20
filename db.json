@@ -1,0 +1,444 @@
+{
+  "sales": [
+    {
+      "id": 1,
+      "name": "3+1",
+      "description": "Кожна четверта піца безкоштовна",
+      "image": "https://www.lapiec-pizza.com.ua/wp-content/uploads/2019/07/banner_3_1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "3 за ціною 2",
+      "description": "3 піца у подарунок",
+      "image": "https://www.lapiec-pizza.com.ua/wp-content/uploads/2019/08/samovyviz.jpg"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "nameUA": "піца",
+      "nameEN": "pizza"
+    },
+    {
+      "id": 2,
+      "nameUA": "паста",
+      "nameEN": "paste"
+    },
+    {
+      "id": 3,
+      "nameUA": "равіолі",
+      "nameEN": "ravioli"
+    },
+    {
+      "id": 4,
+      "nameUA": "десерти",
+      "nameEN": "dessert"
+    },
+    {
+      "id": 5,
+      "nameUA": "салат",
+      "nameEN": "salad"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "category": {
+        "id": 1,
+        "nameUA": "піца",
+        "nameEN": "pizza"
+      },
+      "nameUA": "Карбонара",
+      "nameEN": "Carbonara",
+      "description": "соус томатний, гриби, салямі, кукурудза",
+      "price": 190,
+      "capacity": "420 г.",
+      "image": "https://www.lapiec-pizza.com.ua/wp-content/uploads/2018/07/LA-P_yets.png",
+      "count": 1
+    },
+    {
+      "id": 2,
+      "category": {
+        "id": 1,
+        "nameUA": "піца",
+        "nameEN": "pizza"
+      },
+      "nameUA": "Маргарита",
+      "nameEN": "Margarita",
+      "description": "соус вершковий, томати, ковбаски мисливські, кукурудза",
+      "price": 220,
+      "capacity": "500 г.",
+      "image": "https://www.lapiec-pizza.com.ua/wp-content/uploads/2018/07/LA-P_yets.png",
+      "count": 1
+    },
+    {
+      "id": 5,
+      "category": {
+        "id": 1,
+        "nameUA": "піца",
+        "nameEN": "pizza"
+      },
+      "nameUA": "Болоньезе",
+      "nameEN": "Bolonese",
+      "description": "соус томатний, фарш телячий, цибуля, морква",
+      "price": 109,
+      "capacity": "300 г.",
+      "image": "https://firebasestorage.googleapis.com/v0/b/delfo-f44e4.appspot.com/o/images%2F11547b5b-792b-48fb-92b8-664fa91a13c2.png?alt=media&token=4d94ff88-2bd9-44d8-907d-cf4e87590e29",
+      "count": 1
+    },
+    {
+      "id": 6,
+      "category": {
+        "id": 2,
+        "nameUA": "паста",
+        "nameEN": "paste"
+      },
+      "nameUA": "цезар",
+      "nameEN": "cezar",
+      "description": "Салат айсберг, помідори, куряче м`ясо, сир пармезан, перепелині яйця, духмяні сухарики та фірмова заправка.",
+      "price": 109,
+      "capacity": "250 г.",
+      "image": 1,
+      "size": "https://firebasestorage.googleapis.com/v0/b/delfo-f44e4.appspot.com/o/images%2F247785f9-e594-4c78-8fb3-2d15c76bf394.png?alt=media&token=1c6f5363-714d-4bfb-ad24-d2f6e0b0ca32",
+      "count": 1
+    },
+    {
+      "id": 7,
+      "category": {
+        "id": 5,
+        "nameUA": "салат",
+        "nameEN": "salad"
+      },
+      "nameUA": "Прімавера",
+      "nameEN": "Primavera",
+      "description": "сир моцарела, салат айсберг, помідор чері, огірок, болгарський перець, оливкова олія, фреш лимонний, орегано.",
+      "price": 120,
+      "capacity": "300 г.",
+      "image": 1,
+      "size": "https://firebasestorage.googleapis.com/v0/b/delfo-f44e4.appspot.com/o/images%2F707a5ca7-5deb-4106-a953-1f77bbdfaf4c.png?alt=media&token=bf47dbaa-d9f8-470a-8cfd-7190592f049e",
+      "count": 1
+    },
+    {
+      "id": 8,
+      "category": {
+        "id": 2,
+        "nameUA": "паста",
+        "nameEN": "paste"
+      },
+      "nameUA": "Карбонара",
+      "nameEN": "Carbonara",
+      "description": "спагетті, соус вершковий, бекон",
+      "price": 110,
+      "capacity": "300 г.",
+      "image": 1,
+      "size": "https://firebasestorage.googleapis.com/v0/b/delfo-f44e4.appspot.com/o/images%2F147d89f5-40cf-40cd-b1ab-923da0e82770.png?alt=media&token=002e4611-0af2-473c-ac42-11d70a29ff6b",
+      "count": 1
+    },
+    {
+      "id": 9,
+      "category": {
+        "id": 3,
+        "nameUA": "равіолі",
+        "nameEN": "ravioli"
+      },
+      "nameUA": "де лазіо",
+      "nameEN": "de lazio",
+      "description": "соус томатний, телятина ",
+      "price": 119,
+      "capacity": "250 г.",
+      "image": 1,
+      "size": "https://firebasestorage.googleapis.com/v0/b/delfo-f44e4.appspot.com/o/images%2F217e7621-ccc2-4738-a9a0-47c545d4a9fd.png?alt=media&token=058b2c65-acc9-409a-8257-8bd0bfda4a45",
+      "count": 1
+    },
+    {
+      "id": 10,
+      "category": {
+        "id": 4,
+        "nameUA": "десерти",
+        "nameEN": "dessert"
+      },
+      "nameUA": "тірамісу",
+      "nameEN": "tiramisy",
+      "description": "смачний десерт",
+      "price": 80,
+      "capacity": "200 г.",
+      "image": 1,
+      "size": "",
+      "count": 1
+    },
+    {
+      "id": 11,
+      "category": {
+        "id": 6,
+        "nameUA": "соуси",
+        "nameEN": " sauces"
+      },
+      "nameUA": "томатний соус",
+      "nameEN": "sauce tomato",
+      "description": "томатний соус",
+      "price": 40,
+      "capacity": "50 г.",
+      "image": 1,
+      "size": "",
+      "count": 1
+    },
+    {
+      "id": 12,
+      "category": {
+        "id": 6,
+        "nameUA": "соуси",
+        "nameEN": "sauces"
+      },
+      "nameUA": "томатний соус",
+      "nameEN": "sauces tomato",
+      "description": "томатний соус",
+      "price": 40,
+      "capacity": "50 г.",
+      "image": 1,
+      "size": "https://firebasestorage.googleapis.com/v0/b/delfo-f44e4.appspot.com/o/images%2F80a340b4-6e8b-49a1-8f0f-07b3f1be279a.png?alt=media&token=a9bd9659-98cf-4588-8ef5-a2dd289aa1ae",
+      "count": 1
+    },
+    {
+      "id": 13,
+      "category": {
+        "id": 5,
+        "nameUA": "салат",
+        "nameEN": "salad"
+      },
+      "nameUA": "цезар",
+      "nameEN": "cezar",
+      "description": "Салат айсберг, помідори, куряче м`ясо, сир пармезан, перепелині яйця, духмяні сухарики та фірмова заправка.",
+      "price": 110,
+      "capacity": "300 г.",
+      "image": 1,
+      "size": "https://firebasestorage.googleapis.com/v0/b/delfo-f44e4.appspot.com/o/images%2Ff9d0bcfe-a425-4436-856f-674df76ba313.png?alt=media&token=92f9e93d-1bea-4c67-a6d4-9c6f9f002f2d",
+      "count": 1
+    },
+    {
+      "id": 14,
+      "category": {
+        "id": 5,
+        "nameUA": "салат",
+        "nameEN": "salad"
+      },
+      "nameUA": "цезар",
+      "nameEN": "cazer",
+      "description": "Салат айсберг, помідори, куряче м`ясо, сир пармезан, перепелині яйця, духмяні сухарики та фірмова заправка.",
+      "price": 110,
+      "capacity": "300 г.",
+      "image": 1,
+      "size": "https://firebasestorage.googleapis.com/v0/b/delfo-f44e4.appspot.com/o/images%2Fbb814ab9-3da0-4ed6-88f0-8aefab799b70.jpeg?alt=media&token=2b32416f-2d6f-4c68-9dde-4d4dc08c9a3b",
+      "count": 1
+    },
+    {
+      "id": 15,
+      "category": {
+        "id": 1,
+        "nameUA": "піца",
+        "nameEN": "pizza"
+      },
+      "nameUA": "Болоньезе",
+      "nameEN": "Bolonese",
+      "description": "рукола, помідор чері, огірок, салат айсберг, соус айолі, пармезан, лосось, перепелине яйце, кунжут.",
+      "price": 180,
+      "weight": "200 г.",
+      "count": 1,
+      "image": "https://firebasestorage.googleapis.com/v0/b/delfo-f44e4.appspot.com/o/images%2Fafaba4d5-2efd-408a-856d-0d67649bfa42.jpeg?alt=media&token=c253fe71-c6d3-47d2-b540-24f5775ec349"
+    },
+    {
+      "id": 16,
+      "category": {
+        "id": 2,
+        "nameUA": "паста",
+        "nameEN": "paste"
+      },
+      "nameUA": "Ратіто",
+      "nameEN": "Ratito",
+      "description": "помідори чері, селера, салямі, шинка",
+      "price": 320,
+      "weight": "450 г.",
+      "count": 1,
+      "image": "https://firebasestorage.googleapis.com/v0/b/delfo-f44e4.appspot.com/o/images%2F0b4b9d30-059f-4623-a367-a0aaec7b6fb9.png?alt=media&token=6f84a416-dce0-4ee0-be14-4d406afe075c"
+    },
+    {
+      "id": 17,
+      "category": {
+        "id": 1,
+        "nameUA": "піца",
+        "nameEN": "pizza"
+      },
+      "nameUA": "Ратіто",
+      "nameEN": "Ratito",
+      "description": "шинка, салямі, селера, томати, гриби",
+      "price": 320,
+      "weight": "450 г.",
+      "count": 1,
+      "image": "https://firebasestorage.googleapis.com/v0/b/delfo-f44e4.appspot.com/o/images%2Fc687723b-bc81-46ae-909e-a4a0436c0d31.png?alt=media&token=c2b2206a-cf84-4af6-9187-22922b7e937e"
+    },
+    {
+      "id": 18,
+      "category": {
+        "id": 5,
+        "nameUA": "салат",
+        "nameEN": "salad"
+      },
+      "nameUA": "Карбонара",
+      "nameEN": "Margarita",
+      "description": "гриби сир ковбаса",
+      "price": 213,
+      "weight": "420 г.",
+      "count": 1,
+      "image": "https://firebasestorage.googleapis.com/v0/b/delfo-f44e4.appspot.com/o/images%2Ff3ea2972-3dc0-45e0-8e02-c048df293648.png?alt=media&token=31f6bc6e-c433-4e3e-8ede-4ffea50cb118"
+    },
+    {
+      "id": 19,
+      "count": 1
+    },
+    {
+      "id": 20,
+      "category": {
+        "id": 1,
+        "nameUA": "піца",
+        "nameEN": "pizza"
+      },
+      "nameUA": "bbbb",
+      "nameEN": "bbbbbbbbb",
+      "description": "bbbbbbbbbbb",
+      "price": 32323,
+      "weight": "322",
+      "count": 1,
+      "image": "https://firebasestorage.googleapis.com/v0/b/delfo-f44e4.appspot.com/o/images%2Fcae00aa4-e0b2-4395-bf09-2df4e82b36ce.png?alt=media&token=76b23a24-cf07-404d-96ad-20f8ee3c83ba"
+    },
+    {
+      "id": 21,
+      "category": {
+        "id": 5,
+        "nameUA": "салат",
+        "nameEN": "salad"
+      },
+      "nameUA": "олівє",
+      "nameEN": "olive",
+      "description": "томати ",
+      "price": 22,
+      "weight": "32",
+      "count": 1,
+      "image": "https://firebasestorage.googleapis.com/v0/b/delfo-f44e4.appspot.com/o/images%2F0eddcec9-b752-4bc0-abdf-707525340f0f.png?alt=media&token=4480cb21-2765-424c-87fc-3193e1c4ad8e"
+    },
+    {
+      "id": 22,
+      "category": {
+        "id": 1,
+        "nameUA": "піца",
+        "nameEN": "pizza"
+      },
+      "nameUA": "діабло",
+      "nameEN": "diablo",
+      "description": "томати, шинка, годиннки",
+      "price": 456,
+      "weight": "400 г.",
+      "count": 1,
+      "image": "https://firebasestorage.googleapis.com/v0/b/delfo-f44e4.appspot.com/o/images%2F199121b2-8a02-4cd2-afb4-cb8b7b463d0b.png?alt=media&token=8bdfe64d-6e7c-410b-943d-883a23f642ad"
+    },
+    {
+      "id": 23,
+      "category": {
+        "id": 1,
+        "nameUA": "піца",
+        "nameEN": "pizza"
+      },
+      "nameUA": "4 сири",
+      "nameEN": "4 cheese",
+      "description": "піцца з 4 видами сиру ",
+      "price": 99,
+      "weight": "300 г.",
+      "count": 1,
+      "image": "https://firebasestorage.googleapis.com/v0/b/delfo-f44e4.appspot.com/o/images%2Fca2af540-bb4b-4560-b474-3db3a2c1cccb.png?alt=media&token=a10a7c3e-4e4c-4330-bdca-978b516e00e2"
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "productName": [
+        {
+          "id": 2,
+          "category": {
+            "id": 1,
+            "nameUA": "піца",
+            "nameEN": "pizza"
+          },
+          "nameUA": "Маргарита",
+          "nameEN": "Margarita",
+          "description": "соус вершковий, томати, ковбаски мисливські, кукурудза",
+          "price": 220,
+          "capacity": "500 г.",
+          "image": "https://www.lapiec-pizza.com.ua/wp-content/uploads/2018/07/LA-P_yets.png",
+          "count": 1
+        },
+        {
+          "id": 5,
+          "category": {
+            "id": 1,
+            "nameUA": "піца",
+            "nameEN": "pizza"
+          },
+          "nameUA": "Болоньезе",
+          "nameEN": "Bolonese",
+          "description": "соус томатний, фарш телячий, цибуля, морква",
+          "price": 109,
+          "capacity": "300 г.",
+          "image": "https://firebasestorage.googleapis.com/v0/b/delfo-f44e4.appspot.com/o/images%2F11547b5b-792b-48fb-92b8-664fa91a13c2.png?alt=media&token=4d94ff88-2bd9-44d8-907d-cf4e87590e29",
+          "count": 1
+        },
+        {
+          "id": 1,
+          "category": {
+            "id": 1,
+            "nameUA": "піца",
+            "nameEN": "pizza"
+          },
+          "nameUA": "Карбонара",
+          "nameEN": "Carbonara",
+          "description": "соус томатний, гриби, салямі, кукурудза",
+          "price": 190,
+          "capacity": "420 г.",
+          "image": "https://www.lapiec-pizza.com.ua/wp-content/uploads/2018/07/LA-P_yets.png",
+          "count": 1
+        }
+      ],
+      "userName": "Юрій",
+      "userPhone": 382038,
+      "userCity": "Дрогобич",
+      "userStreet": "Грушевсьокго",
+      "userHouse": 32,
+      "totalPayment": 519,
+      "userComment": "галоіавріла"
+    },
+    {
+      "id": 3,
+      "productName": [
+        {
+          "id": 2,
+          "category": {
+            "id": 1,
+            "nameUA": "піца",
+            "nameEN": "pizza"
+          },
+          "nameUA": "Маргарита",
+          "nameEN": "Margarita",
+          "description": "соус вершковий, томати, ковбаски мисливські, кукурудза",
+          "price": 220,
+          "capacity": "500 г.",
+          "image": "https://www.lapiec-pizza.com.ua/wp-content/uploads/2018/07/LA-P_yets.png",
+          "count": 1
+        }
+      ],
+      "userName": "bbbbbb",
+      "userPhone": 3899128989,
+      "userCity": "Львів",
+      "userStreet": "zelena",
+      "userHouse": 2323,
+      "totalPayment": 220,
+      "userComment": "dsjbdakjda"
+    }
+  ]
+}

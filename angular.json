@@ -92,9 +92,12 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/aos/dist/aos.scss",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/aos/dist/aos.js"
+            ]
           }
         },
         "lint": {
@@ -121,8 +124,13 @@
               "devServerTarget": "delfo:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "delfo"
 }

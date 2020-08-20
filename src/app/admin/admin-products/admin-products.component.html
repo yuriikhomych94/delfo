@@ -1,0 +1,45 @@
+<form>
+
+    <div class="form-group">
+        <label for="productNameUA">Назва продукту UA</label>
+        <input [(ngModel)]="productNameUA" name="productNameUA" type="text" class="form-control" id="productNameUA">
+    </div>
+
+    <div class="form-group">
+        <label for="productNameEN">Назва продукту EN</label>
+        <input [(ngModel)]="productNameEN" name="productNameEN" type="text" class="form-control" id="productNameEN">
+    </div>
+
+    <div class="form-group">
+        <label for="productDescription">Опис продукту</label>
+        <input [(ngModel)]="productDescription" name="productDescription" type="text" class="form-control"
+            id="productDescription">
+    </div>
+
+    <div class="form-group">
+        <label for="productPrice">Ціна</label>
+        <input [(ngModel)]="productPrice" name="productPrice" type="number" class="form-control" id="productPrice">
+    </div>
+
+    <div class="form-group">
+        <label for="productWeight">Вага</label>
+        <input [(ngModel)]="productWeight" name="productWeight" type="text" class="form-control" id="productWeight">
+    </div>
+
+    <div class="custom-file">
+        <input (change)="uploadFile($event)" type="file" class="custom-file-input" id="customFile">
+        <label class="custom-file-label" for="customFile">Вибрати файл</label>
+    </div>
+
+    <div class="progress mt-3 mb-3">
+        <div class="progress-bar progress-bar-striped bg-success" role="progressbar"
+            [style.width]="(uploadProgress | async) + '%'" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+
+    <select [(ngModel)]="productCategory" name="productCategory" class="custom-select" id="inputGroupSelect01">
+        <option selected>Choose...</option>
+        <option *ngFor="let adminCategory of adminCategories" [ngValue]="adminCategory">{{adminCategory.nameUA}}</option>
+    </select>
+
+    <button (click)="addProduct()" class="btn__add">Додати</button>
+</form>

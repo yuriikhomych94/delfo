@@ -1,0 +1,53 @@
+.btn__add {
+    width: 150px;
+    height: 35px;
+    border-radius: 5px;
+    margin-top: 20px;
+    border: 1px solid transparent;
+    color: white;
+    background-color: rgb(28, 197, 28);
+    transition: .3s;
+    }
+    
+.btn__add:hover {
+    border: 1px solid rgb(28, 197, 28);
+    color: rgb(28, 197, 28);
+    background-color: transparent;
+}
+
+.btn__edit {
+    width: 150px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    color: white;
+    background-color: rgb(186, 199, 0);
+    transition: .3s;
+    }
+    
+.btn__edit:hover {
+    border: 1px solid rgb(186, 199, 0);
+    color: rgb(186, 199, 0);
+    background-color: transparent;
+}
+
+.btn__delete {
+    width: 150px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    color: white;
+    background-color: rgb(226, 2, 2);
+    transition: .3s;
+    }
+    
+.btn__delete:hover {
+    border: 1px solid rgb(226, 2, 2);
+    color: rgb(226, 2, 2);
+    background-color: transparent;
+}
+
+
+
+
+

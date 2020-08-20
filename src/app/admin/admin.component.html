@@ -1,0 +1,12 @@
+<div class="nav">
+    <a class="nav-link" [routerLink]="[ 'category' ]" routerLinkActive="active">Категорії</a>
+    <a class="nav-link" [routerLink]="[ 'products' ]" routerLinkActive="active">Продукти</a>
+    <a class="nav-link" [routerLink]="[ 'sales' ]" routerLinkActive="active">Акції</a>
+    <a class="nav-link" [routerLink]="[ 'orders' ]" routerLinkActive="active">Замовлення</a>
+</div>
+
+<div class="col-9">
+    <div class="tab-content">
+        <router-outlet></router-outlet> 
+    </div>
+</div>

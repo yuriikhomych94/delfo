@@ -1,0 +1,51 @@
+<form>
+    <div class="form-group">
+        <label for="saleName">Sale Name</label>
+        <input [(ngModel)]="saleName" name="saleName" type="text" class="form-control" id="saleName">
+    </div>
+
+    <div class="form-group">
+        <label for="saleDescription">Sale Description</label>
+        <input [(ngModel)]="saleDescription" name="saleDescription" type="text" class="form-control"
+            id="saleDescription">
+    </div>
+
+    <div class="form-group">
+        <label for="saleImage">Sale Image</label>
+        <input [(ngModel)]="saleImage" name="saleImage" type="text" class="form-control" id="saleImage">
+    </div>
+
+    <button (click)="addSale()" class="btn__add">Додати</button>
+
+</form>
+
+<hr>
+
+<table class="table">
+
+    <thead>
+        <th>#</th>
+        <th>Name</th>
+        <th>Descrition</th>
+        <th>Image</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let adminSale of adminSales; let i=index">
+            <td> {{ i + 1 }} </td>
+            <td> {{ adminSale.name }} </td>
+            <td> {{ adminSale.description }} </td>
+            <td> {{ adminSale.image }} </td>
+            <td>
+                <button (click)="editSale(adminSale)"class="btn__edit">Редагувати</button>
+            </td>
+            <td>
+                <button (click)="deleteSale(adminSale)" class="btn__delete">Видалити</button>
+            </td>
+        </tr>
+    </tbody>
+
+
+</table>

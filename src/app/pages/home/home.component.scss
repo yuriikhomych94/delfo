@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@1,300&display=swap');
+
+.header__title {
+  width: 100%;
+  height: 100vh;
+  background-image: url('../../../assets/images/title1.jpg');
+  background-size: cover;
+  display: table;
+  background-attachment: fixed;
+}
+
+.text{
+  margin: 160px auto;
+  align-items: center;
+}
+
+
+.title__text {
+  margin: 10px auto;
+  color: rgb(255, 255, 255);
+  letter-spacing: 20px;
+  text-align: center;
+  font-weight: 100;
+  font-size: 16rem;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+.title__text {
+	-webkit-animation: title__text 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: title__text 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes title__text {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-800px);
+            transform: translateZ(-800px);
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+@keyframes title__text {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-800px);
+            transform: translateZ(-800px);
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+
+
+
+.subtitle__text{
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.fastest__delivery {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 40px;
+  padding: 30px;
+  letter-spacing: .1rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.fastest__delivery {
+	-webkit-animation: fastest__delivery 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: fastest__delivery 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@-webkit-keyframes fastest__delivery {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px) translateY(500px);
+            transform: translateZ(-700px) translateY(500px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+            transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fastest__delivery {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px) translateY(500px);
+            transform: translateZ(-700px) translateY(500px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+            transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+
+
+//DELIVERY
+
+
+.delivery__title {
+  width: 100%;
+  height: 70vh;
+  background-image: url('../../../assets/images/slide.jpg');
+  background-size: cover;
+  display: table;
+  background-attachment: fixed;
+}
+
+.delivery {
+  margin: 190px auto;
+  align-items: center;
+}
+
+.delivery__text {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 40px;
+  font-weight: 900;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.delivery__subtext {
+  max-width: 900px;
+  margin: 10px auto;
+  color: rgb(0, 0, 0);
+  letter-spacing: 5px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+
+//MENU
+
+.menu {
+  background-image: url('../../../assets/images/backgroud.jpg');
+  width: 100%;
+  height: 2700px;
+  position: relative;
+}
+
+  
+.cacao {
+  background-image: url('../../../assets/images/cacao.png');
+  width: 100%;
+  height: 100%;
+  background-repeat: repeat-x;
+  background-position: top;
+  position: absolute;
+  overflow: hidden;
+}
+
+.menu__text {
+  position: relative;
+  text-align: center;
+  width: 250px;
+  display: table;
+  margin: 0 auto;
+  padding: 30px;
+  color: white;
+  letter-spacing: .1rem;
+  font-family: 'Montserrat', sans-serif;
+}
+  
+
+.salad {
+  position: absolute;
+  top: 300px;
+  left: calc(50% - 534px);
+  z-index: 620;
+}
+
+
+.basil {
+  background-image: url('../../../assets/images/basil.png');
+  position: absolute;
+  top: 40px;
+  margin: 20px;
+  left: calc(50% - 400px);
+  z-index: 616;
+  width: 300px;
+  height: 212px;
+}
+
+.oil {
+  background-image: url('../../../assets/images/oil.png');
+  position: absolute;
+  top: 160px;
+  left: calc(50% - 800px);
+  z-index: 616;
+  width: 310px;
+  height: 256px;
+}
+
+.strawberries {
+  background-image: url('../../../assets/images/strawberries.png');
+  background-size: cover;
+  position: absolute;
+  top: 90px;
+  right: calc(50% - 545px);
+  z-index: 615;
+  width: 260px;
+  height: 265px;
+}
+
+.sauce {
+  background-image: url('../../../assets/images/tomato-sauce.png');
+  background-size: cover;
+  position: absolute;
+  top: 370px;
+  left: calc(50% + 440px);
+  z-index: 630;
+  width: 350px;
+  height: 285px;
+}
+
+.pasta {
+  position: absolute;
+  top: 1170px;
+  left: calc(50% - 495px);
+  z-index: 622;
+}
+
+.pasta__image {
+  width: 520px;
+  height: 501px;
+}
+
+.tomatoes {
+  background-image: url('../../../assets/images/tomatoes.png');
+  position: absolute;
+  top: 691px;
+  left: calc(50% - 790px);
+  z-index: 621;
+  width: 360px;
+  height: 576px;
+}
+
+
+.dessert__image {
+  position: absolute;
+  top: 1706px;
+  left: calc(50% + 40px);
+  z-index: 627;
+}
+
+.pizza {
+  position: absolute;
+  top: 747px;
+  left: calc(50% + 34px);
+  z-index: 621;
+
+}
+
+.pizza__image {
+  width: 702px;
+  height: 512px;
+}
+
+
+.lime {
+  background-image: url('../../../assets/images/lime.png');
+  background-size: cover;
+  position: absolute;
+  top: 1590px;
+  left: calc(50% - 805px);
+  z-index: 628;
+  width: 320px;
+  height: 291px;
+}
+
+.egg {
+  background-image: url('../../../assets/images/egg.png');
+  position: absolute;
+  top: 1460px;
+  left: calc(50% + 310px);
+  z-index: 626;
+  width: 260px;
+  height: 231px;
+}
+
+.chocolat {
+  background-image: url('../../../assets/images/chocolat.png');
+  position: absolute;
+  top: 1514px;
+  left: calc(50% + 360px);
+  z-index: 625;
+  width: 350px;
+  height: 454px;
+}
+
+.cap {
+  background-image: url('../../../assets/images/cap.png');
+  background-size: cover;
+  position: absolute;
+  top: 2100px;
+  left: calc(50% + 260px);
+  z-index: 630;
+  width: 450px;
+  height: 420px;
+}
+
+
+.ravioli__image {
+  position: absolute;
+  top: 1906px;
+  left: calc(50% - 640px);
+  z-index: 627;
+  width: 530px;
+  height: 490px;
+}
+
+
+
+
+// ABOUT
+
+.about__us {
+  background-image: url('../../../assets/images/des.jpg');
+  background-size: cover;
+  height: 60vh;
+  width: 100%;
+  display: table;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.about__us__block {
+  width: 55%;
+  height: 25vh;
+}
+
+.about__us__title {
+  padding-left: 80px;
+  color: rgb(48, 47, 47);
+  text-align: left;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.about__us__subtitle {
+  margin: 0;
+  color: rgb(128, 128, 128);
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.about__us__text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  text-align: justify;
+}
+
+h5 {
+  width: 100%;
+  line-height: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  text-align: justify;
+}
+
+
+// schedule
+
+
+.schedule {
+  background-image: url('../../../assets/images/booking.jpg');
+  background-size: cover;
+  height: 380px;
+  width: 100%;
+  display: table;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.schedule__title {
+  width: 600px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 50px auto;
+}
+
+.days, .hours, .work__schedule, .contact {
+  color: rgb(156, 156, 156);
+  line-height: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+}
+
+.work__schedule {
+  margin-top: 40px;  
+  color: rgb(167, 167, 167);
+}
+
+.contact, .work__schedule {
+  text-align: center;
+}
+
