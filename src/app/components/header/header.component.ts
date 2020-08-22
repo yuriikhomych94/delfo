@@ -1,11 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { OrdersService } from 'src/app/shared/services/orders.service';
 
+
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
+
 export class HeaderComponent implements OnInit {
 
   getProducts: Array<any> = [];
@@ -31,6 +33,5 @@ export class HeaderComponent implements OnInit {
       this.sum = this.getProducts.reduce((accum, product) => accum + (product.price * product.count), 0);
     }
   }
-
 
 }

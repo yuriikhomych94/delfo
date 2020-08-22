@@ -1,4 +1,9 @@
 <header>
+
+    <!-- <div class="user-block">
+        <a class="admin" [routerLink]="[ '/admin' ]">Увійти</a>
+      </div> -->
+
     <div class="header__title">
         <div class="text">
             <h1 class="title__text">DELFO</h1>
@@ -11,73 +16,13 @@
 <main>
 
     <div class="delivery__title">
-        <div class="delivery" >
+        <div class="delivery">
             <h1 class="delivery__text">Найпопулярніше у вашому місті</h1>
             <h2 class="delivery__subtext">Ознайомтеся з нашими продуктами - ми доставимо вам все, що забажаєте</h2>
         </div>
     </div>
 
-    <div class="menu">
 
-        <div class="cacao"></div>
-
-        <div class="menu__text">
-            <h1>Перегляньте</h1>
-            <h2>Наше</h2>
-            <h1 style="text-align: right">Меню</h1>
-        </div>
-
-        <div class="product">
-
-            <div class="basil"></div>
-
-            <div class="oil"></div>
-
-            <div class="strawberries"></div>
-
-            <div class="salad">
-                <a [routerLink]="[ '/menu/salad']">
-                    <img class="salad__image" src="assets/images/salad.png" alt="">
-                </a>
-            </div>
-
-            <div class="pizza">
-                <a [routerLink]="[ '/menu/pizza']">
-                    <img class="pizza__image" src="assets/images/pizza.png" alt="">
-                </a>
-            </div>
-
-            <div class="tomatoes"></div>
-
-            <div class="pasta">
-                <a [routerLink]="[ '/menu/pasta']">
-                    <img class="pasta__image" src="assets/images/pasta.png" alt="">
-                </a>
-            </div>
-
-            <div class="dessert">
-                <a [routerLink]="[ '/menu/dessert']">
-                    <img class="dessert__image" src="assets/images/dessert.png" alt="">
-                </a>
-            </div>
-
-
-            <div class="lime"></div>
-            <div class="egg"></div>
-            <div class="chocolat"></div>
-            <div class="cap"></div>
-
-            <div class="sauce"></div>
-
-            <div class="ravioli">
-                <a [routerLink]="[ '/menu/ravioli']">
-                    <img class="ravioli__image" src="assets/images/ravioli.png" alt="">
-                </a>
-            </div>
-
-        </div>
-
-    </div>
 
     <div class="about__us">
         <div class="about__us__title">
@@ -114,8 +59,111 @@
 
     </div>
 
-    <div class="gg">
-        <h1></h1>
+
+</main>
+
+
+
+
+
+<main class="catalog wrap">
+
+    <div class="catalog__items">
+        <div class="catalog__items__item">
+            <div class="catalog-card">
+
+                <div class="catalog-card-main">
+                    <div class="catalog-card-header">
+
+                        <div class="catalog-card-title"></div>
+
+                        <div class="catalog-card-price">
+                            <div class="catalog-card-price-amount"></div>
+                            <div class="catalog-card-price-currency"></div>
+                        </div>
+
+                        <div class="catalog-card-footer">
+                            <button class="btn__add">Замовити</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 </main>
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+
+<div class="menu">
+
+    <div class="cacao"></div>
+
+    <div class="menu__text">
+        <h1>Перегляньте</h1>
+        <h2>Наше</h2>
+        <h1 style="text-align: right">Меню</h1>
+    </div>
+
+    <div class="product">
+
+        <div class="basil"></div>
+
+        <div class="oil"></div>
+
+        <div class="strawberries"></div>
+
+        <div class="salad">
+            <a [routerLink]="[ '/menu/salad']">
+                <img class="salad__image" src="assets/images/salad.png" alt="">
+            </a>
+        </div>
+
+        <div class="pizza">
+            <a [routerLink]="[ '/menu/pizza']">
+                <img class="pizza__image" src="assets/images/pizza.png" alt="">
+            </a>
+        </div>
+
+        <div class="tomatoes"></div>
+
+        <div class="pasta">
+            <a [routerLink]="[ '/menu/pasta']">
+                <img class="pasta__image" src="assets/images/pasta.png" alt="">
+            </a>
+        </div>
+
+        <div class="dessert">
+            <a [routerLink]="[ '/menu/dessert']">
+                <img class="dessert__image" src="assets/images/dessert.png" alt="">
+            </a>
+        </div>
+
+
+        <div class="lime"></div>
+        <div class="egg"></div>
+        <div class="chocolat"></div>
+        <div class="cap"></div>
+
+        <div class="sauce"></div>
+
+        <div class="ravioli">
+            <a [routerLink]="[ '/menu/ravioli']">
+                <img class="ravioli__image" src="assets/images/ravioli.png" alt="">
+            </a>
+        </div>
+
+    </div>
+
+</div> -->

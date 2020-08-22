@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@1,300&display=swap');
 
+
+header {
+  width: 100%;
+}
+
+main {
+  width: 100%;
+}
+
 .header__title {
   width: 100%;
   height: 100vh;
@@ -162,186 +171,130 @@
   text-align: center;
 }
 
+//////////////////////////////////////////////////////
 
-//MENU
 
-.menu {
-  background-image: url('../../../assets/images/backgroud.jpg');
-  width: 100%;
-  height: 2700px;
-  position: relative;
+.wrap {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  zoom: 1;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-  
-.cacao {
-  background-image: url('../../../assets/images/cacao.png');
-  width: 100%;
-  height: 100%;
-  background-repeat: repeat-x;
-  background-position: top;
-  position: absolute;
+.catalog__items {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  margin-left: -1.16666%;
+  margin-right: -1.16666%;
+  border: 3px solid #000;
+}
+
+.catalog__items__item {
+  width: 31%;
+  margin-bottom: 30px;  
+}
+
+
+.catalog-card {
+  display: block;
+  background-color: #fff;
   overflow: hidden;
-}
-
-.menu__text {
+  padding-top: 260px;
   position: relative;
+  height: 425px;
+  border: 1px solid #000;
+}
+
+.catalog-card-main {
+  min-height: 165px;
+  max-height: 165px;
+  padding: 20px 20px 70px;
+  border: 1px solid #000;
+}
+
+.catalog-card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.catalog-card-title {
+  color: #808080;
+  font-size: 16px;
+  flex: 1 1;
+  margin-right: 15px;
+  vertical-align: inherit;
+}
+
+.catalog-card-title {
+  border-left: 1px solid rgb(116, 116, 116);
+  white-space: nowrap;
+  text-align: right;
+  min-width: 85px;
+  padding-left: 15px;
+  height: 42px;
+  font-weight: 700;
+}
+
+.catalog-card-price-amount {
+  display: inline-block;
+  font-size: 30px;
+  color: #6c6c6c;
+}
+.catalog-card-price-currency {
+  display: inline-block;
+  font-size: 14px;
+  color: #a2a2a2;
+}
+
+
+
+.catalog-card-footer {
   text-align: center;
-  width: 250px;
-  display: table;
-  margin: 0 auto;
-  padding: 30px;
-  color: white;
-  letter-spacing: .1rem;
-  font-family: 'Montserrat', sans-serif;
-}
-  
-
-.salad {
   position: absolute;
-  top: 300px;
-  left: calc(50% - 534px);
-  z-index: 620;
+  bottom: 30px;
+  left: 20px;
+  right: 20px;
+  border: 1px solid #000;
+}
+
+.btn__add {
+  min-width: 100%;;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  padding: 0 20px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  cursor: pointer;
+  border: 0 none;
+  outline: 0!important;
+  background: #eca410;
 }
 
 
-.basil {
-  background-image: url('../../../assets/images/basil.png');
-  position: absolute;
-  top: 40px;
-  margin: 20px;
-  left: calc(50% - 400px);
-  z-index: 616;
-  width: 300px;
-  height: 212px;
-}
-
-.oil {
-  background-image: url('../../../assets/images/oil.png');
-  position: absolute;
-  top: 160px;
-  left: calc(50% - 800px);
-  z-index: 616;
-  width: 310px;
-  height: 256px;
-}
-
-.strawberries {
-  background-image: url('../../../assets/images/strawberries.png');
-  background-size: cover;
-  position: absolute;
-  top: 90px;
-  right: calc(50% - 545px);
-  z-index: 615;
-  width: 260px;
-  height: 265px;
-}
-
-.sauce {
-  background-image: url('../../../assets/images/tomato-sauce.png');
-  background-size: cover;
-  position: absolute;
-  top: 370px;
-  left: calc(50% + 440px);
-  z-index: 630;
-  width: 350px;
-  height: 285px;
-}
-
-.pasta {
-  position: absolute;
-  top: 1170px;
-  left: calc(50% - 495px);
-  z-index: 622;
-}
-
-.pasta__image {
-  width: 520px;
-  height: 501px;
-}
-
-.tomatoes {
-  background-image: url('../../../assets/images/tomatoes.png');
-  position: absolute;
-  top: 691px;
-  left: calc(50% - 790px);
-  z-index: 621;
-  width: 360px;
-  height: 576px;
-}
 
 
-.dessert__image {
-  position: absolute;
-  top: 1706px;
-  left: calc(50% + 40px);
-  z-index: 627;
-}
-
-.pizza {
-  position: absolute;
-  top: 747px;
-  left: calc(50% + 34px);
-  z-index: 621;
-
-}
-
-.pizza__image {
-  width: 702px;
-  height: 512px;
-}
 
 
-.lime {
-  background-image: url('../../../assets/images/lime.png');
-  background-size: cover;
-  position: absolute;
-  top: 1590px;
-  left: calc(50% - 805px);
-  z-index: 628;
-  width: 320px;
-  height: 291px;
-}
-
-.egg {
-  background-image: url('../../../assets/images/egg.png');
-  position: absolute;
-  top: 1460px;
-  left: calc(50% + 310px);
-  z-index: 626;
-  width: 260px;
-  height: 231px;
-}
-
-.chocolat {
-  background-image: url('../../../assets/images/chocolat.png');
-  position: absolute;
-  top: 1514px;
-  left: calc(50% + 360px);
-  z-index: 625;
-  width: 350px;
-  height: 454px;
-}
-
-.cap {
-  background-image: url('../../../assets/images/cap.png');
-  background-size: cover;
-  position: absolute;
-  top: 2100px;
-  left: calc(50% + 260px);
-  z-index: 630;
-  width: 450px;
-  height: 420px;
-}
 
 
-.ravioli__image {
-  position: absolute;
-  top: 1906px;
-  left: calc(50% - 640px);
-  z-index: 627;
-  width: 530px;
-  height: 490px;
-}
+
+
+
+
+
 
 
 
@@ -431,3 +384,197 @@ h5 {
   text-align: center;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//MENU
+
+// .menu {
+  //   background-image: url('../../../assets/images/backgroud.jpg');
+  //   width: 100%;
+  //   height: 2700px;
+  //   position: relative;
+  // }
+  
+    
+  // .cacao {
+  //   background-image: url('../../../assets/images/cacao.png');
+  //   width: 100%;
+  //   height: 100%;
+  //   background-repeat: repeat-x;
+  //   background-position: top;
+  //   position: absolute;
+  //   overflow: hidden;
+  // }
+  
+  // .menu__text {
+  //   position: relative;
+  //   text-align: center;
+  //   width: 250px;
+  //   display: table;
+  //   margin: 0 auto;
+  //   padding: 30px;
+  //   color: white;
+  //   letter-spacing: .1rem;
+  //   font-family: 'Montserrat', sans-serif;
+  // }
+    
+  
+  // .salad {
+  //   position: absolute;
+  //   top: 300px;
+  //   left: calc(50% - 534px);
+  //   z-index: 620;
+  // }
+  
+  
+  // .basil {
+  //   background-image: url('../../../assets/images/basil.png');
+  //   position: absolute;
+  //   top: 40px;
+  //   margin: 20px;
+  //   left: calc(50% - 400px);
+  //   z-index: 616;
+  //   width: 300px;
+  //   height: 212px;
+  // }
+  
+  // .oil {
+  //   background-image: url('../../../assets/images/oil.png');
+  //   position: absolute;
+  //   top: 160px;
+  //   left: calc(50% - 800px);
+  //   z-index: 616;
+  //   width: 310px;
+  //   height: 256px;
+  // }
+  
+  // .strawberries {
+  //   background-image: url('../../../assets/images/strawberries.png');
+  //   background-size: cover;
+  //   position: absolute;
+  //   top: 90px;
+  //   right: calc(50% - 545px);
+  //   z-index: 615;
+  //   width: 260px;
+  //   height: 265px;
+  // }
+  
+  // .sauce {
+  //   background-image: url('../../../assets/images/tomato-sauce.png');
+  //   background-size: cover;
+  //   position: absolute;
+  //   top: 370px;
+  //   left: calc(50% + 440px);
+  //   z-index: 630;
+  //   width: 350px;
+  //   height: 285px;
+  // }
+  
+  // .pasta {
+  //   position: absolute;
+  //   top: 1170px;
+  //   left: calc(50% - 495px);
+  //   z-index: 622;
+  // }
+  
+  // .pasta__image {
+  //   width: 520px;
+  //   height: 501px;
+  // }
+  
+  // .tomatoes {
+  //   background-image: url('../../../assets/images/tomatoes.png');
+  //   position: absolute;
+  //   top: 691px;
+  //   left: calc(50% - 790px);
+  //   z-index: 621;
+  //   width: 360px;
+  //   height: 576px;
+  // }
+  
+  
+  // .dessert__image {
+  //   position: absolute;
+  //   top: 1706px;
+  //   left: calc(50% + 40px);
+  //   z-index: 627;
+  // }
+  
+  // .pizza {
+  //   position: absolute;
+  //   top: 747px;
+  //   left: calc(50% + 34px);
+  //   z-index: 621;
+  
+  // }
+  
+  // .pizza__image {
+  //   width: 702px;
+  //   height: 512px;
+  // }
+  
+  
+  // .lime {
+  //   background-image: url('../../../assets/images/lime.png');
+  //   background-size: cover;
+  //   position: absolute;
+  //   top: 1590px;
+  //   left: calc(50% - 805px);
+  //   z-index: 628;
+  //   width: 320px;
+  //   height: 291px;
+  // }
+  
+  // .egg {
+  //   background-image: url('../../../assets/images/egg.png');
+  //   position: absolute;
+  //   top: 1460px;
+  //   left: calc(50% + 310px);
+  //   z-index: 626;
+  //   width: 260px;
+  //   height: 231px;
+  // }
+  
+  // .chocolat {
+  //   background-image: url('../../../assets/images/chocolat.png');
+  //   position: absolute;
+  //   top: 1514px;
+  //   left: calc(50% + 360px);
+  //   z-index: 625;
+  //   width: 350px;
+  //   height: 454px;
+  // }
+  
+  // .cap {
+  //   background-image: url('../../../assets/images/cap.png');
+  //   background-size: cover;
+  //   position: absolute;
+  //   top: 2100px;
+  //   left: calc(50% + 260px);
+  //   z-index: 630;
+  //   width: 450px;
+  //   height: 420px;
+  // }
+  
+  
+  // .ravioli__image {
+  //   position: absolute;
+  //   top: 1906px;
+  //   left: calc(50% - 640px);
+  //   z-index: 627;
+  //   width: 530px;
+  //   height: 490px;
+  // }

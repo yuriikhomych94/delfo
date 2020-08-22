@@ -1,5 +1,5 @@
 export interface ICategory {
     id: number;
-    nameUA: string;
+    nameUA: string; 
     nameEN: string;
 }
