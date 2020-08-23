@@ -178,10 +178,11 @@ main {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 90%;
+  width: 100%;
   zoom: 1;
   padding-left: 20px;
   padding-right: 20px;
+  background-color: rgb(238, 238, 238);
 }
 
 .catalog__items {
@@ -193,11 +194,10 @@ main {
   align-items: flex-start;
   margin-left: -1.16666%;
   margin-right: -1.16666%;
-  border: 3px solid #000;
 }
 
 .catalog__items__item {
-  width: 31%;
+  width: 28%;
   margin-bottom: 30px;  
 }
 
@@ -206,23 +206,26 @@ main {
   display: block;
   background-color: #fff;
   overflow: hidden;
-  padding-top: 260px;
   position: relative;
-  height: 425px;
-  border: 1px solid #000;
+  height: 465px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.catalog-card-image {
+  height: 280px;
+  width: 100%;
+  background-color: red;
 }
 
 .catalog-card-main {
-  min-height: 165px;
-  max-height: 165px;
   padding: 20px 20px 70px;
-  border: 1px solid #000;
 }
 
 .catalog-card-header {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .catalog-card-title {
@@ -230,11 +233,12 @@ main {
   font-size: 16px;
   flex: 1 1;
   margin-right: 15px;
-  vertical-align: inherit;
+  display: flex;
+  align-items: center;
 }
 
 .catalog-card-title {
-  border-left: 1px solid rgb(116, 116, 116);
+  border-right: 1px solid rgb(116, 116, 116);
   white-space: nowrap;
   text-align: right;
   min-width: 85px;
@@ -245,8 +249,10 @@ main {
 
 .catalog-card-price-amount {
   display: inline-block;
+  align-items: center;
   font-size: 30px;
   color: #6c6c6c;
+  padding-right: 10px;
 }
 .catalog-card-price-currency {
   display: inline-block;
@@ -262,11 +268,12 @@ main {
   bottom: 30px;
   left: 20px;
   right: 20px;
-  border: 1px solid #000;
+  // border: 1px solid #000;
 }
 
-.btn__add {
-  min-width: 100%;;
+.add-to-cart-product {
+  width: 70%;
+  border-radius: 9px;
   color: #fff;
   font-size: 14px;
   font-weight: 700;
@@ -280,9 +287,49 @@ main {
   cursor: pointer;
   border: 0 none;
   outline: 0!important;
-  background: #eca410;
+  background: #ec1010;
+  transition: .3s
 }
 
+.add-to-cart-product:hover {
+  color: #ec1010;
+  border: 1px solid #ec1010;
+  background-color: #fff;
+  transition: .3s;
+}
+
+
+.glow {
+  height: 100vh;
+  font-size: 80px;
+  font-weight: bold;
+  transition: all 200ms;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  display: grid;
+  place-items: center;
+  z-index: 1;
+  cursor: pointer;
+  position: relative;
+  padding: 20px;
+}
+.glow {
+  background: #111;
+}
+/*Waves*/
+.glow span {
+  color: #fff;
+  transition: all 300ms;
+}
+.glow span:hover {
+  text-shadow: 0 0 10px #0698a5,
+               0 0 30px #0698a5,
+               0 0 80px #0698a5,
+               0 0 120px #0698a5,
+               0 0 200px #0698a5;
+}
 
 
 

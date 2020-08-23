@@ -68,25 +68,36 @@
 
 <main class="catalog wrap">
 
-    <div class="catalog__items">
+    <div *ngFor="let pizza of pizzaProducts" class="catalog__items">
         <div class="catalog__items__item">
             <div class="catalog-card">
 
+                <div class="catalog-card-image">
+                    <!-- <a class="productImage preview preloaded"
+                        [style.backgroundImage]="'url(' + product.image + ')'"></a> -->
+                </div>
+
                 <div class="catalog-card-main">
+
                     <div class="catalog-card-header">
 
-                        <div class="catalog-card-title"></div>
+                        <div class="catalog-card-title">
+                            {{pizza.nameUA}}
+                        </div>
 
                         <div class="catalog-card-price">
-                            <div class="catalog-card-price-amount"></div>
+                            <div class="catalog-card-price-amount">
+                                <span>{{pizza.price * pizza.count}}</span> <i> грн</i>
+                            </div>
                             <div class="catalog-card-price-currency"></div>
                         </div>
-
-                        <div class="catalog-card-footer">
-                            <button class="btn__add">Замовити</button>
-                        </div>
-
                     </div>
+
+                    <div class="catalog-card-footer glow">
+                        <div class="button add-to-cart-product" (click)="addToBasket(pizza)"><span>Замовити</span>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
