@@ -45,8 +45,7 @@ const routes: Routes = [
 
   {
     path: 'admin', component: AdminComponent, canActivate: [AuthGuard], children: [
-      { path: '', pathMatch: 'full', redirectTo: 'category' },
-      { path: 'category', component: AdminCategoryComponent },
+      { path: '', pathMatch: 'full', redirectTo: 'products' },
       { path: 'products', component: AdminProductsComponent },
       { path: 'sales', component: AdminSalesComponent },
       { path: 'orders', component: AdminOrdersComponent }

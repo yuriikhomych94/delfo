@@ -37,7 +37,7 @@
     </div>
 
     <select [(ngModel)]="productCategory" name="productCategory" class="custom-select" id="inputGroupSelect01">
-        <option selected>Choose...</option>
+        <option selected>Choose...</option> 
         <option *ngFor="let adminCategory of adminCategories" [ngValue]="adminCategory">{{adminCategory.nameUA}}</option>
     </select>
 

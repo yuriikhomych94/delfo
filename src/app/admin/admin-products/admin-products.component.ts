@@ -48,7 +48,9 @@ export class AdminProductsComponent implements OnInit {
   }
 
   private _getProduct(): void {
-    this._productService.getProduct();
+    this._productService.getProduct().subscribe(data => {
+      this.adminProducts = data;
+    });
   }
 
   uploadFile(event) {
@@ -91,6 +93,12 @@ export class AdminProductsComponent implements OnInit {
     if (this.adminProducts.length > 0) {
       product.id = this.adminProducts.slice(-1)[0].id + 1;
     }
+    
+
+    console.log("Product id");
+    console.log(product.id);
+    console.log("Lenght: ", this.adminProducts.length);
+
     this._productService.addProduct(product);
     this._resetForm();
   }
