@@ -90,10 +90,7 @@ export class AdminProductsComponent implements OnInit {
     console.log("Product image")
     console.log(this.productImage);
 
-    if (this.adminProducts.length > 0) {
-      product.id = this.adminProducts.slice(-1)[0].id + 1;
-    }
-    
+    product.id = this.generateId();
 
     console.log("Product id");
     console.log(product.id);
@@ -103,6 +100,15 @@ export class AdminProductsComponent implements OnInit {
     this._resetForm();
   }
 
+  private generateId(): number {
+    if (this.adminProducts.length > 0) {
+      let sortedArr = this.adminProducts.sort((a,b) => (a.id > b.id) ? 1 : ((b.id > a.id) ? -1 : 0));
+      let lastElement = sortedArr[sortedArr.length - 1];
+      return lastElement.id + 1;
+    } else {
+      return 1;
+    }
+  }
 
   private _resetForm(): void {
     this.productNameUA = '';

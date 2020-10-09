@@ -13,6 +13,8 @@ export class HomeComponent implements OnInit {
 
   pizzaProducts: Array<IProduct> = [];
   localProducts: Array<IProduct> = [];
+  category: string;
+  private _activateRoute: any;
 
   constructor(private _ordersService: OrdersService,
     private _productService: ProductsService) { }

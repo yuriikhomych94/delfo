@@ -15,7 +15,7 @@
 
         <div class="cart-products" *ngFor="let order of orders">
             <div class="product">
-                
+
                 <!-- картинка товару -->
                 <div class="product-image">
                     <div class="image" [style.backgroundImage]="'url('+ order.image +')'"></div>
@@ -49,7 +49,7 @@
         <!-- Зальна сума -->
         <div class="cart-bottom">
             <div class="productSum">
-                <span  class="cartHrn">Сума: {{ totalPrice }} грн.</span>
+                <span class="cartHrn">Сума: {{ totalPrice }} грн.</span>
             </div>
         </div>
 
@@ -63,9 +63,8 @@
                 <span><input class="userPhone" [(ngModel)]="userPhone" name="userPhone" type="number"
                         placeholder="Телефон*"></span>
 
-                <span><input class="userCity" [(ngModel)]="userCity" name="userAddress" type="text"
-                        placeholder="Місто*"></span> 
-                        <!-- вставити options -->
+                <!-- <span><input class="userCity" [(ngModel)]="userCity" name="userAddress" type="text"
+                        placeholder="Місто*"></span> -->
 
                 <span><input class="userStreet" [(ngModel)]="userStreet" name="userAddress" type="text"
                         placeholder="Вулиця*"></span>
@@ -75,8 +74,15 @@
 
                 <span><input class="userComment" [(ngModel)]="userComment" name="userComment" type="textarea"
                         placeholder="Коментар"></span>
-
             </form>
+
+
+            <!-- РЕЙТИНГ -->
+            <!-- <ng-container *ngFor="let star of stars">
+                <app-star [starId]="star" [rating]="hoverState || rating" (enter)="enter($event)" (leave)="leave($event)"
+                  (bigClick)="updateRating(star)">
+                </app-star>
+            </ng-container> -->
         </div>
 
 
@@ -91,195 +97,31 @@
         <div class="button-submit" data-aos="fade-down-left">
             <button class="submit" (click)="addOrder()">ОФОРМИТИ ЗАМОВЛЕННЯ</button>
         </div>
-      
+
+
         
-         
+            <!-- Галочка -->
+            <div class="dd" [(ngModel)]="gal" name="gal">
+                <svg>
+                    <symbol id="tick-icon" viewBox="0 0 515.556 515.556">
+                        <path
+                            d="m0 274.226 176.549 176.886 339.007-338.672-48.67-47.997-290.337 290-128.553-128.552z" />
+                    </symbol>
+                </svg>
+                <svg>
+                    <use href="#tick-icon" width="75" height="75" fill="#09ac1e"></use>
+                </svg>
+            </div> 
+
+        
+
+
+
     </div>
     <agm-map id="map" style="height: 560px" [zoom]="zoom" [latitude]="lat" [longitude]="lng">
-        <agm-polygon [paths]="pathsGreen" [fillColor]="greenPolygonColor" [strokeColor] = "greenStrokeColor" [fillOpacity]="fillOpacity"></agm-polygon>
-        <agm-polygon [paths]="pathsYellow" [fillColor]="yellowPolygonColor" [strokeColor] = "yellowStrokeColor" [fillOpacity]="fillOpacity"></agm-polygon>
+        <agm-polygon [paths]="pathsGreen" [fillColor]="greenPolygonColor" [strokeColor]="greenStrokeColor"
+            [fillOpacity]="fillOpacity"></agm-polygon>
+        <agm-polygon [paths]="pathsYellow" [fillColor]="yellowPolygonColor" [strokeColor]="yellowStrokeColor"
+            [fillOpacity]="fillOpacity"></agm-polygon>
     </agm-map>
-
-    <div data-aos="fade-right">
-        <h1 data-aos="fade-right">htllo</h1>
-    </div>
-    
 </div>
-
-
-
-<!-- <div class="container">
-    <div class="row">
-        <div class="col-lg-12" *ngIf="orders.length == 0">
-            <div class="emptySpace80 emptySpace-lt50 emptySpace-md35 emptySpace-xs0"></div>
-            <div class="sectionTitle fadeInTop d-flex flex-column justify-content-center align-items-center"
-                style="min-height: 35vh">
-                <p>Кошик порожній.</p>
-                <a routerlink="/home" style="color: #C80000">Замовити піцу</a>
-            </div>
-        </div>
-        <div class="col-lg-12 mt-5" *ngIf="orders.length > 0">
-            <div class="row">
-                <div class="col-lg-12 col-lg-push-6 col-my-lt-12">
-                    <div class="payItems smallSlideLeft animationDelay-1">
-                        <div class="table">
-                            <div class="tr thead">
-                                <div class="tr">
-                                    <div class="td"></div>
-                                    <div class="td">Товар</div>
-                                    <div class="td">Ціна</div>
-                                    <div class="td">Кількість</div>
-                                    <div class="td">Загалом</div>
-                                </div>
-                            </div>
-                            <div class="tr tbody">
-                                <div class="tr productOrder" *ngFor="let order of orders">
-                                    <div class="td">
-                                        <div class="delateProduct remove-cart-product-popup open-popup"
-                                            (click)="deleteProduct(order)">
-                                        </div>
-                                    </div>
-                                    <div class="td">
-                                        <div class="smallProduct">
-                                            <a class="imgWrapper"
-                                                [style.backgroundImage]="'url('+ order.image +')'"></a>
-                                            <div class="smallProductInfo">
-                                                <h6 class="h6 as"><a>{{order.nameUA}}</a>
-                                                </h6>
-                                                <p></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="td">
-                                        <div class="singleItemPrice">
-                                            <span>{{order.price}}</span><i>грн</i>
-                                        </div>
-                                    </div>
-                                    <div class="td">
-                                        <div class="productCountWrapper">
-                                            <span class="productCount lessProduct"
-                                                (click)="productCount(order,false)"></span>
-                                            <input class="product-qty" maxlength="3" type="text" [value]="order.count">
-                                            <span class="productCount moreProduct update-cart-product"
-                                                (click)="productCount(order,true)"></span>
-                                        </div>
-                                    </div>
-                                    <div class="td">
-                                        <div class="itemPrice productPrice">
-                                            <b class="tableMobTitle">Загалом:
-                                            </b><span>{{order.count * order.price}}</span><i>грн</i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tr tfoot">
-                                <div class="td">
-                                    <div class="fullPrice cart-total">
-                                        <div class="subFullPrice" style="display:none;">
-                                            <span>299</span>
-                                            <i>грн</i>
-                                        </div>
-                                        <div class="totalFullPrice" style="display:block;">
-                                            <p>Загалом:</p>
-                                            <span>{{totalPrice}}</span>
-                                            <i>грн</i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="btnWrapper txtRight fadeInTop mt-3">
-                        <div class="emptySpace40 emptySpace-xs20"></div>
-                        <div class="payCheckboxs text-left">
-                            <label class="checkboxEntry radio ">
-                                <input id="pay" type="radio" name="payment-type" value="cash" class="payment-cash"
-                                    checked="checked"><span>Оплата готівкою</span>
-                            </label>
-                            <label class="checkboxEntry radio ml-3">
-                                <input id="pay2" type="radio" name="payment-type" value="card"
-                                    class="payment-card"><span>Безготівкова
-                                    оплата</span>
-                            </label>
-                        </div>
-                        <div class="emptySpace40"></div>
-                    </div>
-                    <div class="emptySpace-lt60 emptySpace-md45 emptySpace-xs25"></div>
-                </div>
-                <div class="col-lg-12 col-lg-pull-6 col-my-lt-12 paySelect">
-                    <h6 class="h6 as smallSlideRight animationDelay-1">Оберіть спосіб доставки</h6>
-                    <div class="emptySpace30"></div>
-                    <div class="payForm smallSlideRight">
-                        <form id="make-order-form">
-                            <input type="hidden" name="payment_type" value="cash">
-                            <div class="deliveryCheckboxs">
-                                <label class="checkboxEntry radio">
-                                    <input type="radio" name="delivery" value="delivery"
-                                        checked="checked"><span>Доставка</span>
-                                </label>
-                                <label class="checkboxEntry radio ml-3">
-                                    <input type="radio" name="delivery" value="advance"><span>Заздалегідь</span>
-                                </label>
-                            </div>
-                            <div class="emptySpace20 emptySpace-xs15"></div>
-                            <label class="inputWrapper ">
-                                <i>Ваше имя*</i>
-                                <span><input class="simpleInput name" [(ngModel)]="userName" name="userName" type="text"
-                                        value="" maxlength="60"></span>
-                                <span class="firstBorderElement"></span>
-                                <span class="secondBorderElement"></span>
-                            </label>
-                            <div class="emptySpace10"></div>
-                            <label class="inputWrapper ">
-                                <i>Телефон*</i>
-                                <span><input class="simpleInput" [(ngModel)]="userPhone" name="userPhone"
-                                        type="text"></span>
-                                <span class="firstBorderElement"></span>
-                                <span class="secondBorderElement"></span>
-                            </label>
-                            <div class="emptySpace10"></div>
-                            <label class="inputWrapper ">
-                                <i>Місто*</i>
-                                <span><input class="simpleInput" [(ngModel)]="userCity" name="userCity"
-                                        type="text"></span>
-                                <span class="firstBorderElement"></span>
-                                <span class="secondBorderElement"></span>
-                            </label>
-                            <div class="emptySpace10"></div>
-                            <label class="inputWrapper ">
-                                <i>Вулиця*</i>
-                                <span><input class="simpleInput" [(ngModel)]="userStreet" name="userStreet"
-                                        type="text"></span>
-                                <span class="firstBorderElement"></span>
-                                <span class="secondBorderElement"></span>
-                            </label>
-                            <div class="emptySpace10"></div>
-                            <label class="inputWrapper ">
-                                <i>Будинок*</i>
-                                <span><input class="simpleInput" [(ngModel)]="userHouse" name="userHouse"
-                                        type="text"></span>
-                                <span class="firstBorderElement"></span>
-                                <span class="secondBorderElement"></span>
-                            </label>
-                            <div class="emptySpace10"></div>
-                            <label class="inputWrapper ">
-                                <i class="textarea">Ваш коментар</i>
-                                <span><textarea class="simpleInput" [(ngModel)]="userComment" name="userComment" id=""
-                                        maxlength="256" cols="30" rows="10"></textarea></span>
-                                <span class="firstBorderElement"></span>
-                                <span class="secondBorderElement"></span>
-                            </label>
-                            <div class="emptySpace10"></div>
-                            <input type="submit" style="display: none">
-                        </form>
-                        <div class="emptySpace20 emptySpace-xs15"></div>
-                    </div>
-                    <div class="btnWrapper text-center mb-3">
-                        <a class="button btnColor2 orderButton make-order" (click)="addOrder()">ОФОРМИТИ ЗАМОВЛЕННЯ</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-</div> -->

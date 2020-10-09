@@ -4,6 +4,7 @@ import { IProduct } from 'src/app/shared/interfaces/product.interface';
 import { IOrder } from 'src/app/shared/interfaces/order.interface';
 import { Order } from 'src/app/shared/models/order.model';
 
+
 @Component({
   selector: 'app-basket',
   templateUrl: './basket.component.html',
@@ -12,6 +13,7 @@ import { Order } from 'src/app/shared/models/order.model';
 
 export class BasketComponent implements OnInit {
 
+  gal = false;
   orders: Array<IProduct> = [];
   productName: string;
   image: string;
@@ -221,6 +223,7 @@ export class BasketComponent implements OnInit {
     });
     this.resetForm();
     this.orders = [];
+    this.gal = true;
   }
 
   resetForm(): void {

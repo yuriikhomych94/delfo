@@ -1,8 +1,4 @@
-<header>
-
-    <!-- <div class="user-block">
-        <a class="admin" [routerLink]="[ '/admin' ]">Увійти</a>
-      </div> -->
+<!-- <header>
 
     <div class="header__title">
         <div class="text">
@@ -11,7 +7,7 @@
             <h2 class="fastest__delivery">Найшвидша доставка Львова</h2>
         </div>
     </div>
-</header>
+</header> -->
 
 <main>
 
@@ -19,6 +15,45 @@
         <div class="delivery">
             <h1 class="delivery__text">Найпопулярніше у вашому місті</h1>
             <h2 class="delivery__subtext">Ознайомтеся з нашими продуктами - ми доставимо вам все, що забажаєте</h2>
+        </div>
+    </div>
+
+
+    <div class="wrapper">
+        <div *ngFor="let pizza of pizzaProducts" class="card">
+            <div class="card-wrapper">
+                <div class="pizza-card-item">
+                    <div class="pizza-image">
+                        <a [routerLink]="[ '/menu/' + pizza.category?.nameEN, pizza.id ]" class="image"
+                            [style.backgroundImage]="'url(' + pizza.image + ')'"></a>
+                    </div>
+                    <div class="pizza-description">
+                        <div class="pizza-name">
+                            <h2 class="name">{{pizza.nameUA}}</h2>
+                            <p class="description">{{pizza.description}}</p>
+                        </div>
+
+
+                        <div class="pizza-item-price-wrapper">
+                            <div class="pizza-count">
+                                <input type="text" maxlength="3" [value]="pizza.count" class="cart-item count-value">
+                                <div class="cart-remove-add">
+                                    <div class="count-plus" (click)="productCount(pizza, true)">+</div>
+                                    <div class="count-minus" (click)="productCount(pizza, false)">-</div>
+                                </div>
+                            </div>
+
+                            <div class="pizza-order">
+                                <div class="price-weight">
+                                    <div class="pizza-price"><span>{{pizza.price * pizza.count}}</span><i>грн</i></div>
+                                    <div class="pizza-weight"><span>{{pizza.weight}}</span></div>
+                                </div>
+                                <button class="button add-to-cart-pizza" (click)="addToBasket(pizza)">Замовити</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -38,26 +73,6 @@
         </div>
     </div>
 
-    <div class="schedule">
-        <h1 class="work__schedule">Графік роботи</h1>
-        <div class="schedule__title">
-            <div class="days">
-                <h3>ПН - ПТ</h3>
-                <h3>СБ - НД</h3>
-            </div>
-            <div class="hours">
-                <h3>8:00 - 23:00</h3>
-                <h3>10:00 - 22:00</h3>
-
-            </div>
-        </div>
-
-        <div class="contact">
-            <h2>Наші Контакти</h2>
-            <h3> +380 (96) 19 66 986</h3>
-        </div>
-
-    </div>
 
 
 </main>
@@ -65,45 +80,6 @@
 
 
 
-
-<main class="catalog wrap">
-
-    <div *ngFor="let pizza of pizzaProducts" class="catalog__items">
-        <div class="catalog__items__item">
-            <div class="catalog-card">
-
-                <div class="catalog-card-image">
-                    <!-- <a class="productImage preview preloaded"
-                        [style.backgroundImage]="'url(' + product.image + ')'"></a> -->
-                </div>
-
-                <div class="catalog-card-main">
-
-                    <div class="catalog-card-header">
-
-                        <div class="catalog-card-title">
-                            {{pizza.nameUA}}
-                        </div>
-
-                        <div class="catalog-card-price">
-                            <div class="catalog-card-price-amount">
-                                <span>{{pizza.price * pizza.count}}</span> <i> грн</i>
-                            </div>
-                            <div class="catalog-card-price-currency"></div>
-                        </div>
-                    </div>
-
-                    <div class="catalog-card-footer glow">
-                        <div class="button add-to-cart-product" (click)="addToBasket(pizza)"><span>Замовити</span>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-</main>
 
 
 
@@ -178,3 +154,38 @@
     </div>
 
 </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <span class="product-count-minus" (click)="productCount(pizza, false)">
+                            <img src="assets/images/minus.svg" alt="Count minus" class="minus">
+                        </span>
+                        <span class="product-quantity"> {{pizza.count}} </span>
+                        <span class="product-count-plus" (click)="productCount(pizza, true)">
+                            <img src="assets/images/plus.svg" alt="Count plus" class="plus">
+                        </span> -->

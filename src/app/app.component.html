@@ -5,5 +5,12 @@
       <ngx-ui-loader></ngx-ui-loader>
     </router-outlet>
   </main>
+
+  <ng-container *ngFor="let star of stars">
+    <app-star [starId]="star" [rating]="hoverState || rating" (enter)="enter($event)" (leave)="leave($event)"
+      (bigClick)="updateRating(star)">
+    </app-star>
+  </ng-container>
+  
   <app-footer></app-footer>
 </div>

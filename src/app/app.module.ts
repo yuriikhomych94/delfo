@@ -44,6 +44,7 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { environment } from '../environments/environment';
 import 'firebase/storage';
 import { GoogleMapsModule } from '@angular/google-maps';
+import { StarComponent } from './star/star.component';
 
 
 @NgModule({
@@ -71,7 +72,8 @@ import { GoogleMapsModule } from '@angular/google-maps';
     AdminSalesComponent,
     AdminOrdersComponent,
     MenuComponent,
-    LoginComponent
+    LoginComponent,
+    StarComponent
   ],
   imports: [
     BrowserModule,

@@ -1,26 +1,91 @@
 <header>
 
-  <!-- <div class="user-block" (click)="hide()">
-    <a [hidden]="hideText" class="admin" [routerLink]="[ '/admin' ]">Увійти</a>
-  </div> -->
+  <div class="row">
+    <div class="logo">
+      <img src="assets/images/logo.png" alt="Delfo logo">
+    </div>
+    <div class="header">
+      <div class="info-header">
+        <div class="middle-header">
+          <div class="delivery">
+            <p class="delivery-description">Безкоштовна доставка по Львову від 149 грн</p>
+          </div>
+          <div class="info">
+            <div class="phone">
+              <p class="more-phone">+38 (096) 19-66-986</p>
+            </div>
+            <div class="schedule">
+              <div class="time">
+                <div class="clock-icon">
+                  <img class="clock-icon" src="assets/images/clock.png" alt="Clock icon">
+                </div>
+                <p class="hours">10:00 - 02:00</p>
+              </div>
+            </div>
+          </div>
+          <div class="admin-block">
+            <a class="admin" [routerLink]="[ '/admin' ]">Увійти</a>
+          </div>
+        </div>
+      </div>
 
-  <div class="user-block">
-    <a class="admin" [routerLink]="[ '/admin' ]">Увійти</a>
+      <div class="menu">
+        <ul class="nav-bar">
+          <li class="nav-menu-pizza">
+            <a [routerLink]="[ 'menu/pizza']">
+              <img class="pizza-icon" src="assets/images/pizza-icon.png" alt="Pizza icon">
+              <p>Піца</p>
+            </a>
+          </li>
+          <li class="nav-menu-salad">
+            <a [routerLink]="[ 'menu/salad']">
+              <img class="salad-icon" src="assets/images/salad-icon.png" alt="Salad icon">
+              <p>Салати</p>
+            </a>
+          </li>
+          <li class="nav-menu-pasta">
+            <a [routerLink]="[ 'menu/pasta']">
+              <img class="pasta-icon" src="assets/images/pasta-icon.png" alt="Pasta icon">
+              <p>Паста</p>
+            </a>
+          </li>
+          <li class="nav-menu-ravioli">
+            <a [routerLink]="[ 'menu/raviolli']">
+              <img class="ravioli-icon" src="assets/images/ravioli-icon.png" alt="Ravioli icon">
+              <p>Равіолі</p>
+            </a>
+          </li>
+          <li class="nav-menu-dessert">
+            <a [routerLink]="[ 'menu/dessert']">
+              <img class="dessert-icon" src="assets/images/dessert-icon.png" alt="Dessert icon">
+              <p>Десерти</p>
+            </a>
+          </li>
+          <li class="nav-menu-sales">
+            <a [routerLink]="[ 'sales']">
+              <img class="sale-icon" src="assets/images/sale-icon.png" alt="Sale icon">
+              <p>Акції</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
-
-  <div class="cart">
-    <a [routerLink]="[ '/basket' ]" class="basket">
-      <img src="https://www.lapiec-pizza.com.ua/wp-content/themes/lapiec/fonts/svg-icons/shopping-cart.svg"
-        alt="shopping-cart">
-      <span class="basketPrice">
-        <i>{{sum}} грн</i>
-      </span>
-    </a>
-  </div>
-
 </header>
 
 
+
+<div class="cart">
+  <a [routerLink]="[ '/basket' ]" class="basket">
+    <img src="https://www.lapiec-pizza.com.ua/wp-content/themes/lapiec/fonts/svg-icons/shopping-cart.svg"
+      alt="shopping-cart">
+    <span class="basketPrice">
+      <i>{{sum}} грн</i>
+    </span>
+  </a>
+</div>
+
+<!-- 
 <div class="menu">
   <ul class="main-menu">
 
@@ -73,4 +138,4 @@
       <div class="cyrcle-o"></div>
     </li>
   </ul>
-</div>
+</div> -->

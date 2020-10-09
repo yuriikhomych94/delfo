@@ -39,9 +39,8 @@ export class MenuComponent implements OnInit {
       console.log(data);
 
       console.log(categoryName);
-
-      this.arrProducts = data.filter(product =>  product.category?.nameEN === categoryName);
-      this.category = this.arrProducts[0].category.nameUA;
+      this.arrProducts = data.filter(product => product.category?.nameEN === categoryName);
+      this.category = this.arrProducts[0].category.nameEN;
     });
   }
 
